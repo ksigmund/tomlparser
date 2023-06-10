@@ -1,0 +1,31 @@
+{
+  "name": "your-extension-name",
+  "displayName": "Your Extension Name",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Formatters"],
+  "contributes": {
+    "languages": [
+      {
+        "id": "toml",
+        "extensions": [".toml"]
+      }
+    ],
+    "documentFormattingEdits": [
+      {
+        "language": "toml",
+        "provider": "your-extension-name"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:toml"
+  ],
+  "main": "./out/extension.js",
+  "devDependencies": {
+    "typescript": "^x.x.x",
+    "vscode": "^1.60.0"
+  }
+}

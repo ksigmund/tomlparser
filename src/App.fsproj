@@ -3,11 +3,25 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Fable.Import.VSCodeDebugger.fs" />
+    <Compile Include="Fable.Import.VSCode.fs" />
+    <!-- <Compile Include="Fable.Import.VSCode.Proposed.fs" /> -->
+    <Compile Include="Fable.Import.VSCode.LanguageServer.fs" />
+    <Compile Include="Fable.Import.Axios.fs" />
+    <Compile Include="Fable.Import.ws.fs" />
+    <Compile Include="Fable.Import.Showdown.fs" />
+    <Compile Include="Helpers.fs" />
     <Compile Include="App.fs" />
   </ItemGroup>
+
+
+
   <ItemGroup>
-    <PackageReference Include="Fable.Browser.Dom" Version="2.2.0" />
-    <PackageReference Include="Fable.Core" Version="3.2.3" />
-    <PackageReference Include="Fable.Import.VSCode" Version="0.1.2" />
+
+    <PackageReference Include="Fable.Browser.Dom" Version="2.14.0" />
+    <PackageReference Include="Fable.Core" Version="4.0.0" />
+    <PackageReference Include="Fable.Node" Version="1.2.0" />
+    <PackageReference Include="Fable.Promise" Version="3.2.0" />
+    <!-- <PackageReference Include="Fable.Import.VSCode" Version="0.1.2" /> -->
   </ItemGroup>
 </Project>
